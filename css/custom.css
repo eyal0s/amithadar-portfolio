@@ -1,0 +1,74 @@
+/*.navbar-hero {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  padding: 15px 15px;
+  font-size: 18px;
+}*/
+
+@font-face {
+    font-family: IdealSans;
+    src: url("../fonts/IdealSans-Book-Pro.otf") format("opentype");
+}
+@font-face {
+    font-family: IdealSansLight;
+    src: url("../fonts/IdealSans-Light-Pro.otf") format("opentype");
+}
+@font-face {
+    font-family: IdealSansSemibold;
+    src: url("../fonts/IdealSans-Semibold-Pro.otf") format("opentype");
+}
+
+/*navbar*/
+
+.navbar .navbar-nav {
+    display: inline-block;
+    /*float: none;*/
+    vertical-align: top;
+    font-size: 14px;
+    /*font-family: IdealSansLight, Helvetica, Sans-Serif, Arial;*/
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+
+.navbar-default .light>li>a:hover {
+  color: #bfbfbf;
+}
+.navbar-default .light>li>a:hover {
+  color: #00000;
+}
+.container-fluid {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 15px;
+}
+.nav.nav-center {
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin: 0;
+    float: none;
+    /*font-family: IdealSansSemibold, Helvetica, Sans-Serif, Arial;*/
+    font-size: 19px;
+    letter-spacing: 12px;
+}
+.semibold {
+    font-family: IdealSansSemibold, Helvetica, Sans-Serif, Arial;
+}
+.light {
+    font-family: IdealSansLight, Helvetica, Sans-Serif, Arial;
+    letter-spacing: 2.5px;
+
+}
+.navbar-inner {
+    text-align: center;
+}
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a {
+    color: rgb(0, 0, 0);
+}
