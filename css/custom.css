@@ -31,13 +31,11 @@
 .navbar .navbar-collapse {
     text-align: center;
 }
-
-
 .navbar-default .light>li>a:hover {
-  color: #bfbfbf;
+    color: #bfbfbf;
 }
 .navbar-default .light>li>a:hover {
-  color: #00000;
+    color: #00000;
 }
 .container-fluid {
     padding-right: 40px;
@@ -52,7 +50,7 @@
     float: none;
     /*font-family: IdealSansSemibold, Helvetica, Sans-Serif, Arial;*/
     font-size: 19px;
-    letter-spacing: 12px;
+    letter-spacing: 11px;
 }
 .semibold {
     font-family: IdealSansSemibold, Helvetica, Sans-Serif, Arial;
@@ -60,7 +58,6 @@
 .light {
     font-family: IdealSansLight, Helvetica, Sans-Serif, Arial;
     letter-spacing: 2.5px;
-
 }
 .navbar-inner {
     text-align: center;
@@ -71,4 +68,31 @@
 }
 .navbar-default .navbar-nav>li>a {
     color: rgb(0, 0, 0);
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#footer-right-links {
+  float: right!important;
+}
+
+#footer>.navbar-inner>hr {
+  border-color:black;
+  width:91%;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+#footer>.navbar-inner  {
+  margin-top: -2px;
+}
+
+#footer>.navbar-inner>.container-fluid {
+  margin-top: 0px;
 }
