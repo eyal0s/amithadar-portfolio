@@ -152,4 +152,9 @@ body {
   background-color: white;
 }
 
+.content {
+  margin: 70px 0;
+
+}
+
 /*want to change the hover state? go to cubeportfolio.css and search for caption-hover*/
