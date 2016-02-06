@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- load cubeportfolio css file -->
+    <link rel="stylesheet" href="cubeportfolio/css/cubeportfolio.css">
+
+    <!-- load cubeportfolio jQuery plugin -->
+    <script type="text/javascript" src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+
 </head>
 
 <body>
@@ -27,77 +34,225 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+    <!-- ~~~~~~~~~~ navbar ~~~~~~~~~~ -->
+    <section>
+        <nav class="navbar navbar-default navbar-static-top" id="header">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the  nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-inner" id="bs-example-navbar-collapse-1">
 
-    <nav class="navbar navbar-default navbar-static-top" id="header">
-        <div class="navbar-inner">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                        <ul class="nav navbar-nav light">
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+
+                        <ul class="nav navbar-nav nav-center semibold" id="hero">
+                            <li><a href="index.html">AMIT HADAR</a></li>
+                        </ul>
+
+                        <ul class="nav navbar-nav pull-right light">
+                            <li><a href="#">facebook</a></li>
+                            <li><a href="#">instagram</a></li>
+                        </ul>
+
+                    </div>
                 </div>
-                <!-- Collect the  nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-inner" id="bs-example-navbar-collapse-1">
-
-                    <ul class="nav navbar-nav light">
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav nav-center semibold" id="hero">
-                        <li><a href="#">AMIT HADAR</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav pull-right light">
-                        <li><a href="#">facebook</a></li>
-                        <li><a href="#">instagram</a></li>
-                    </ul>
-
-                </div>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-        </div>
-    </nav>
-
-    <!-- content -->
-
-
-    <!-- footer -->
-    <nav class="navbar navbar-default" id="footer">
-
-        <div class="navbar-inner">
-          <hr>
-            <div class="container-fluid">
-                <!-- Collect the  nav links, forms, and other content for toggling -->
-                <div class="">
-                    <ul class="nav navbar-nav light">
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav pull-right light" id="footer-right-links">
-                        <li><a href="#">facebook</a></li>
-                        <li><a href="#">instagram</a></li>
-                    </ul>
-                </div>
+                <!-- /.navbar-collapse -->
             </div>
             <!-- /.container-fluid -->
+        </nav>
+
+        <!-- ~~~~~~~~~~ navbar - END ~~~~~~~~~~ -->
+
+        <!-- ~~~~~~~~~~ content ~~~~~~~~~~ -->
+
+        <!-- filters -->
+        <div class="container" id="container">
+            <div id="js-filters-masonry" class="cbp-l-filters-alignCenter light">
+                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item filter">
+                    all
+                </div>
+                <div data-filter=".graphic" class="cbp-filter-item filter">
+                    graphic
+                </div>
+                <div data-filter=".illustraion" class="cbp-filter-item filter">
+                    illustration
+                </div>
+                <div data-filter=".motion" class="cbp-filter-item filter">
+                    motion
+                </div>
+            </div>
+
+            <div id="js-grid-masonry" class="cbp">
+
+                <div class="cbp-item web-design">
+                    <a href="http://scriptpie.com/cubeportfolio/img/?i=1200x900/a78bc9" class="cbp-caption cbp-lightbox" data-title="The Gang Blue<br>by Cosmin Capitanu">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="gallery/illustration1.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-title">Faded Color Of The Sun</div>
+                                    <div class="cbp-l-caption-desc">by Cosmin Capitanu</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cbp-item web-design">
+                    <a href="http://scriptpie.com/cubeportfolio/img/?i=1200x900/a78bc9" class="cbp-caption cbp-lightbox" data-title="The Gang Blue<br>by Cosmin Capitanu">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="gallery/big.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-title">Faded Color Of The Sun</div>
+                                    <div class="cbp-l-caption-desc">by Cosmin Capitanu</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cbp-item web-design">
+                    <a href="http://scriptpie.com/cubeportfolio/img/?i=1200x900/a78bc9" class="cbp-caption cbp-lightbox" data-title="The Gang Blue<br>by Cosmin Capitanu">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="gallery/web1-small.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-title">Faded Color Of The Sun</div>
+                                    <div class="cbp-l-caption-desc">by Cosmin Capitanu</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
         </div>
-    </nav>
+    </section>
 
+    <!-- ~~~~~~~~~~ content - END ~~~~~~~~~~ -->
 
+    <!-- ~~~~~~~~~~ footer ~~~~~~~~~~ -->
+    <footer>
+        <div id="footer">
+            <nav class="navbar navbar-default" id="footer-in">
+                <div class="navbar-inner">
+                    <hr>
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav light">
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+
+                        <ul class="nav navbar-nav pull-right light" id="footer-right-links">
+                            <li><a href="#">facebook</a></li>
+                            <li><a href="#">instagram</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.container-fluid -->
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <!-- ~~~~~~~~~~ footer - END ~~~~~~~~~~ -->
+
+    <script type="text/javascript" src="js/cubeportfolio.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')
     </script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+    <script type="text/javascript">
+        // positionFooter();
+        //
+        // function positionFooter() {
+        //     if ($(document.body).height() < $(window).height()) {
+        //         $('#footer').css({
+        //             position: 'absolute',
+        //             top: ($(window).scrollTop() + $(window).height() - $("#footer").height()) + "px",
+        //             width: "100%"
+        //         });
+        //     } else {
+        //         $('#footer').css({
+        //             position: 'static'
+        //         });
+        //     }
+        // }
+        // $(window).bind('scroll resize click', positionFooter);
+
+        // Window load event used just in case window height is dependant upon images
+        $(window).bind("load", function() {
+
+            var footerHeight = 0,
+                footerTop = 0,
+                $footer = $("#footer");
+
+            positionFooter();
+
+            function positionFooter() {
+
+                footerHeight = $footer.height();
+                footerTop = ($(window).scrollTop() + $(window).height() - footerHeight) + "px";
+
+                if (($(document.body).height() + footerHeight) < $(window).height()) {
+                    //
+                    $footer.css({
+                        position: "absolute"
+                    }).animate({
+                        top: footerTop
+                    })
+                } else {
+                    $footer.css({
+                        position: "static"
+                    })
+                }
+
+            }
+
+            $(window)
+                .scroll(positionFooter)
+                .resize(positionFooter)
+
+        });
+
+        jQuery(document).ready(function() {
+            jQuery('#grid-container').cubeportfolio({
+                animationType:"unfold",
+                caption:"pushTop"
+            });
+
+            // if ($(document.body).height() < $(window).height()) {
+            //     $('#footer').css({
+            //         position: 'absolute',
+            //         top: ($(window).scrollTop() + $(window).height() - $("#footer").height()) + "px",
+            //         width: "100%"
+            //     });
+            // } else {
+            //     $('#footer').css({
+            //         position: 'static'
+            //     });
+            // }
+        });
+    </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function(b, o, i, l, e, r) {

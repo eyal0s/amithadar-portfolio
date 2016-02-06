@@ -69,8 +69,12 @@
 .navbar-default .navbar-nav>li>a {
     color: rgb(0, 0, 0);
 }
-#footer {
-    position: absolute;
+
+#hero {
+  margin-left: 67px;
+}
+#footer-in {
+    /*position: absolute;*/
     bottom: 0;
     height: 40px;
     margin-top: 20px;
@@ -81,7 +85,7 @@
   float: right!important;
 }
 
-#footer>.navbar-inner>hr {
+#footer-in>.navbar-inner>hr {
   border-color:black;
   width:91%;
   text-align: center;
@@ -89,10 +93,61 @@
 
 }
 
-#footer>.navbar-inner  {
+#footer-in>.navbar-inner  {
   margin-top: -2px;
 }
 
-#footer>.navbar-inner>.container-fluid {
+#footer-in>.navbar-inner>.container-fluid {
   margin-top: 0px;
+}
+
+/*added for the sticky footer*/
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 142px; /* .push must be the same height as .footer */
+}
+
+.cbp-l-filters-alignCenter.light {
+  font-family: IdealSansLight, Helvetica, Sans-Serif, Arial;
+  letter-spacing: 2.5px;
+  font-size: 14px;
+  color: black;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.cbp-l-filters-alignCenter.cbp-filter-item {
+  color: #000;
+  width: 116px;
+}
+
+.light>.cbp-filter-item {
+  width:116px;
+}
+
+body {
+  margin: 0;
+}
+
+#footer { height: 100px; }
+
+#container {
+  margin-bottom: 100px;
+}
+
+/*lightbox*/
+.cbp-popup-lightbox {
+  background-color: white;
 }
