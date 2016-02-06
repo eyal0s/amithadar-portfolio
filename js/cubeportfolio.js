@@ -2,17 +2,16 @@
     'use strict';
 
     // init cubeportfolio
-    $('#js-grid-masonry').cubeportfolio({
-        filters: '#js-filters-masonry',
-        layoutMode: 'grid',
-        defaultFilter: '*',
-        animationType: 'slideDelay',
-        gapHorizontal: 20,
-        gapVertical: 20,
-        gridAdjustment: 'responsive',
+    $('#js-grid-mosaic-flat').cubeportfolio({
+        filters: '#js-filters-mosaic-flat',
+        loadMore: '#js-loadMore-mosaic-flat',
+        loadMoreAction: 'click',
+        layoutMode: 'mosaic',
+        sortToPreventGaps: true,
+        displayType: 'fadeIn',
         mediaQueries: [{
             width: 1500,
-            cols: 5
+            cols: 6
         }, {
             width: 1100,
             cols: 4
@@ -26,14 +25,18 @@
             width: 320,
             cols: 1
         }],
-        caption: 'overlayBottomAlong',
-        displayType: 'bottomToTop',
-        displayTypeSpeed: 100,
+        defaultFilter: '*',
+        animationType: 'fadeOutTop',
+        gapHorizontal: 10,
+        gapVertical: 10,
+        gridAdjustment: 'responsive',
+        caption: 'zoom',
+        displayType: 'fadeIn',
+        displayTypeSpeed: 4000,
 
         // lightbox
         lightboxDelegate: '.cbp-lightbox',
         lightboxGallery: true,
         lightboxTitleSrc: 'data-title',
-        lightboxCounter: '<div class="cbp-popup-lightbox-counter">{{current}} of {{total}}</div>',
     });
 })(jQuery, window, document);

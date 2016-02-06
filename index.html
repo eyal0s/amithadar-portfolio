@@ -78,7 +78,7 @@
 
         <!-- filters -->
         <div class="container" id="container">
-            <div id="js-filters-masonry" class="cbp-l-filters-alignCenter light">
+            <div id="js-filters-mosaic-flat" class="cbp-l-filters-alignCenter light">
                 <div data-filter="*" class="cbp-filter-item-active cbp-filter-item filter">
                     all
                 </div>
@@ -93,56 +93,33 @@
                 </div>
             </div>
 
-            <div id="js-grid-masonry" class="cbp">
+            <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-mosaic-flat cbp-caption-active cbp-caption-fadeIn cbp-ready">
 
-                <div class="cbp-item web-design">
+                <div class="cbp-item graphic">
                     <a href="http://scriptpie.com/cubeportfolio/img/?i=1200x900/a78bc9" class="cbp-caption cbp-lightbox" data-title="The Gang Blue<br>by Cosmin Capitanu">
                         <div class="cbp-caption-defaultWrap">
                             <img src="gallery/illustration1.jpg" alt="">
                         </div>
                         <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-alignCenter">
+                            <!-- <div class="cbp-l-caption-alignCenter">
                                 <div class="cbp-l-caption-body">
                                     <div class="cbp-l-caption-title">Faded Color Of The Sun</div>
                                     <div class="cbp-l-caption-desc">by Cosmin Capitanu</div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </a>
                 </div>
 
-                <div class="cbp-item web-design">
-                    <a href="http://scriptpie.com/cubeportfolio/img/?i=1200x900/a78bc9" class="cbp-caption cbp-lightbox" data-title="The Gang Blue<br>by Cosmin Capitanu">
+                <div class="cbp-item graphic">
+                    <a href="gallery/graphic1-1.jpg" class="cbp-caption cbp-lightbox" data-title="The Gang Blue<br>by Cosmin Capitanu">
                         <div class="cbp-caption-defaultWrap">
-                            <img src="gallery/big.jpg" alt="">
+                            <img src="gallery/graphic1-1.jpg" alt="">
                         </div>
                         <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-alignCenter">
-                                <div class="cbp-l-caption-body">
-                                    <div class="cbp-l-caption-title">Faded Color Of The Sun</div>
-                                    <div class="cbp-l-caption-desc">by Cosmin Capitanu</div>
-                                </div>
-                            </div>
                         </div>
                     </a>
                 </div>
-
-                <div class="cbp-item web-design">
-                    <a href="http://scriptpie.com/cubeportfolio/img/?i=1200x900/a78bc9" class="cbp-caption cbp-lightbox" data-title="The Gang Blue<br>by Cosmin Capitanu">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="gallery/web1-small.jpg" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-alignCenter">
-                                <div class="cbp-l-caption-body">
-                                    <div class="cbp-l-caption-title">Faded Color Of The Sun</div>
-                                    <div class="cbp-l-caption-desc">by Cosmin Capitanu</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
 
             </div>
         </div>
@@ -182,22 +159,6 @@
     <script src="js/main.js"></script>
 
     <script type="text/javascript">
-        // positionFooter();
-        //
-        // function positionFooter() {
-        //     if ($(document.body).height() < $(window).height()) {
-        //         $('#footer').css({
-        //             position: 'absolute',
-        //             top: ($(window).scrollTop() + $(window).height() - $("#footer").height()) + "px",
-        //             width: "100%"
-        //         });
-        //     } else {
-        //         $('#footer').css({
-        //             position: 'static'
-        //         });
-        //     }
-        // }
-        // $(window).bind('scroll resize click', positionFooter);
 
         // Window load event used just in case window height is dependant upon images
         $(window).bind("load", function() {
@@ -237,20 +198,9 @@
         jQuery(document).ready(function() {
             jQuery('#grid-container').cubeportfolio({
                 animationType:"unfold",
+                gapHorizontal: 10,
                 caption:"pushTop"
             });
-
-            // if ($(document.body).height() < $(window).height()) {
-            //     $('#footer').css({
-            //         position: 'absolute',
-            //         top: ($(window).scrollTop() + $(window).height() - $("#footer").height()) + "px",
-            //         width: "100%"
-            //     });
-            // } else {
-            //     $('#footer').css({
-            //         position: 'static'
-            //     });
-            // }
         });
     </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
