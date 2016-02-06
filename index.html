@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -95,49 +95,47 @@
                 </div>
             </div>
 
-            <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-mosaic-flat cbp-caption-active cbp-caption-fadeIn cbp-ready">
 
+            <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-mosaic-flat">
 
+              <!-- COLOR OF THE SUN -->
+                <div class="cbp-item graphic">
+                    <a href="gallery/big.jpg" class="cbp-caption cbp-lightbox" data-title="Bolt UI<br>by Tiberiu Neamu">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="gallery/big.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                        </div>
+                    </a>
+                </div>
+
+                <!-- ICONS -->
+                <div class="cbp-item graphic">
+                    <a href="gallery/graphic2-small.jpg" class="cbp-caption cbp-lightbox" data-title="World Clock Widget<br>by Paul Flavius Nechita">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="gallery/graphic2-small.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                        </div>
+                    </a>
+                </div>
+
+                <!-- ILLUSTRATION -->
                 <div class="cbp-item illustration">
-                    <a href="http://scriptpie.com/cubeportfolio/img/?i=1200x900/a78bc9" class="cbp-caption cbp-lightbox" data-title="The Gang Blue<br>by Cosmin Capitanu">
+                    <a href="gallery/illustration1.jpg" class="cbp-caption cbp-lightbox" data-title="WhereTO App<br>by Tiberiu Neamu">
                         <div class="cbp-caption-defaultWrap">
                             <img src="gallery/illustration1.jpg" alt="">
                         </div>
                         <div class="cbp-caption-activeWrap">
-                            <!-- <div class="cbp-l-caption-alignCenter">
-                                <div class="cbp-l-caption-body">
-                                    <div class="cbp-l-caption-title">Faded Color Of The Sun</div>
-                                    <div class="cbp-l-caption-desc">by Cosmin Capitanu</div>
-                                </div>
-                            </div> -->
                         </div>
                     </a>
                 </div>
 
+                <!-- POSTER -->
                 <div class="cbp-item graphic">
-                    <a href="gallery/graphic1-1.jpg" class="cbp-caption cbp-lightbox" data-title="The Gang Blue<br>by Cosmin Capitanu">
+                    <a href="gallery/graphic3-small.jpg" class="cbp-caption cbp-lightbox" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">
                         <div class="cbp-caption-defaultWrap">
-                            <img src="gallery/big.jpg" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap">
-                        </div>
-                    </a>
-                </div>
-
-                <div class="cbp-item graphic">
-                    <a href="gallery/graphic2-small.jpg" class="cbp-caption cbp-lightbox" data-title="The Gang Blue<br>by Cosmin Capitanu">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="gallery/big.jpg" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap">
-                        </div>
-                    </a>
-                </div>
-
-                <div class="cbp-item graphic">
-                    <a href="gallery/graphic3-small.jpg" class="cbp-caption cbp-lightbox" data-title="The Gang Blue<br>by Cosmin Capitanu">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="gallery/big.jpg" alt="">
+                            <img src="gallery/graphic3-small.jpg" alt="">
                         </div>
                         <div class="cbp-caption-activeWrap">
                         </div>
@@ -146,7 +144,7 @@
 
                 <!-- GOOD LIFE -->
                 <div class="cbp-item motion">
-                    <a href="https://www.youtube.com/watch?v=xwkovjUO7c4&feature=youtu.be" class="cbp-caption cbp-lightbox" data-title="The Gang Blue<br>by Cosmin Capitanu">
+                    <a href="https://www.youtube.com/watch?v=xwkovjUO7c4&feature=youtu.be" class="cbp-caption cbp-lightbox" data-title="iDevices<br>by Tiberiu Neamu">
                         <div class="cbp-caption-defaultWrap">
                             <img src="gallery/760X380.png" alt="">
                         </div>
@@ -155,9 +153,9 @@
                     </a>
                 </div>
 
-                <!-- 3 WAYS TO COOL DOWN TOASTS -->
+                <!-- TOASTS -->
                 <div class="cbp-item motion">
-                    <a href="https://www.youtube.com/watch?v=iQ5L0_pAW5E&feature=youtu.be" class="cbp-caption cbp-lightbox" data-title="The Gang Blue<br>by Cosmin Capitanu">
+                    <a href="https://www.youtube.com/watch?v=iQ5L0_pAW5E&feature=youtu.be" class="cbp-caption cbp-lightbox" data-title="Remind~Me Widget<br>by Tiberiu Neamu">
                         <div class="cbp-caption-defaultWrap">
                             <img src="gallery/760X380.png" alt="">
                         </div>
@@ -165,8 +163,9 @@
                         </div>
                     </a>
                 </div>
-
             </div>
+
+
         </div>
     </section>
 
@@ -204,7 +203,6 @@
     <script src="js/main.js"></script>
 
     <script type="text/javascript">
-
         // Window load event used just in case window height is dependant upon images
         $(window).bind("load", function() {
 
@@ -241,11 +239,49 @@
         });
 
         jQuery(document).ready(function() {
-            jQuery('#grid-container').cubeportfolio({
-                animationType:"unfold",
-                gapHorizontal: 10,
-                caption:"pushTop"
-            });
+
+            (function($, window, document, undefined) {
+                'use strict';
+
+                // init cubeportfolio
+                $('#js-grid-mosaic-flat').cubeportfolio({
+                    filters: '#js-filters-mosaic-flat',
+                    loadMore: '#js-loadMore-mosaic-flat',
+                    loadMoreAction: 'click',
+                    layoutMode: 'mosaic',
+                    sortToPreventGaps: true,
+                    displayType: 'fadeIn',
+                    mediaQueries: [{
+                        width: 1500,
+                        cols: 6
+                    }, {
+                        width: 1100,
+                        cols: 4
+                    }, {
+                        width: 800,
+                        cols: 3
+                    }, {
+                        width: 480,
+                        cols: 2
+                    }, {
+                        width: 320,
+                        cols: 1
+                    }],
+                    defaultFilter: '*',
+                    animationType: 'fadeOutTop',
+                    gapHorizontal: 15,
+                    gapVertical: 15,
+                    gridAdjustment: 'responsive',
+                    caption: 'zoom',
+                    displayTypeSpeed: 3000,
+
+                    // lightbox
+                    lightboxDelegate: '.cbp-lightbox',
+                    lightboxGallery: true,
+                    lightboxTitleSrc: 'data-title',
+                });
+            })(jQuery, window, document);
+
         });
     </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
