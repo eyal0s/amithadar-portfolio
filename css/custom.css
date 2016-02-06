@@ -139,6 +139,9 @@ html, body {
 
 body {
   margin: 0;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #000;
 }
 
 #footer { height: 100px; }
@@ -155,6 +158,14 @@ body {
 .content {
   margin: 70px 0;
 
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #bfbfbf;
 }
 
 /*want to change the hover state? go to cubeportfolio.css and search for caption-hover*/
