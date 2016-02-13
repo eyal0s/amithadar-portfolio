@@ -3993,6 +3993,13 @@ if (typeof Object.create !== 'function') {
                     t.close();
                 }
             });
+
+            //EYAL
+            $(document).on('clickoutside.cbp', function(e) {
+              t.close();
+            });
+
+
         },
 
         createMarkupSinglePageInline: function() {
@@ -4200,6 +4207,10 @@ if (typeof Object.create !== 'function') {
 
             // call function if current element is image or video (iframe)
             t[element.type](element);
+
+            $(".bg-blur").addClass("blur");
+            $(".bg").addClass('overlay');
+
         },
 
         openSinglePage: function(blocks, currentBlock) {
@@ -5027,6 +5038,8 @@ if (typeof Object.create !== 'function') {
                     finishClose();
                 }
             }
+            $(".bg").removeClass("overlay");
+            $(".bg-blur").removeClass("blur");
 
             // now the popup is closed
             t.isOpen = false;

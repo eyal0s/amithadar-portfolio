@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="cubeportfolio/css/cubeportfolio.css">
 
     <!-- load cubeportfolio jQuery plugin -->
-    <script type="text/javascript" src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <script type="text/javascript" src="cubeportfolio/js/jquery.cubeportfolio.js"></script>
 
 </head>
 
@@ -37,7 +37,7 @@
         <![endif]-->
 
     <!-- ~~~~~~~~~~ navbar ~~~~~~~~~~ -->
-    <section>
+    <section class="bg-blur">
         <nav class="navbar navbar-default navbar-static-top" id="header">
             <div class="navbar-inner">
                 <div class="container-fluid">
@@ -199,7 +199,7 @@
                     </a>
                 </div>
 
-                <!-- TOASTS asd -->
+                <!-- TOASTS -->
                 <div class="cbp-item motion">
                     <a href="https://www.youtube.com/watch?v=iQ5L0_pAW5E&feature=youtu.be&VQ=HD720" class="cbp-caption cbp-lightbox" data-title="Remind~Me Widget<br>by Tiberiu Neamu">
                         <div class="cbp-caption-defaultWrap">
@@ -209,17 +209,28 @@
                         </div>
                     </a>
                 </div>
+
+
+                <!-- RONI ALTER -->
+                <div class="cbp-item graphic">
+                    <a href="gallery/graphic6-small.jpg" class="cbp-caption cbp-lightbox" data-title="Remind~Me Widget<br>by Tiberiu Neamu">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="gallery/graphic6-small.jpg" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                        </div>
+                    </a>
+                </div>
+
             </div>
-
-
         </div>
     </section>
 
     <!-- ~~~~~~~~~~ content - END ~~~~~~~~~~ -->
 
     <!-- ~~~~~~~~~~ footer ~~~~~~~~~~ -->
-    <footer>
-        <div id="footer">
+    <footer class="bg-blur">
+        <div>
             <nav class="navbar navbar-default" id="footer-in">
                 <div class="navbar-inner">
                     <hr>
@@ -228,7 +239,6 @@
                             <li><a href="about.html">about</a></li>
                             <li><a href="contact.html">contact</a></li>
                         </ul>
-
                         <ul class="nav navbar-nav pull-right light" id="footer-right-links">
                             <li><a href="https://www.facebook.com/amithadar8">facebook</a></li>
                             <li><a href="https://www.instagram.com/amithadar8/">instagram</a></li>
@@ -239,98 +249,14 @@
             </nav>
         </div>
     </footer>
+    <div class="bg"></div>
     <!-- ~~~~~~~~~~ footer - END ~~~~~~~~~~ -->
-
     <script type="text/javascript" src="js/cubeportfolio.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')
     </script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
-    <script type="text/javascript">
-        // Window load event used just in case window height is dependant upon images
-        $(window).bind("load", function() {
-
-            var footerHeight = 0,
-                footerTop = 0,
-                $footer = $("#footer");
-
-            positionFooter();
-
-            function positionFooter() {
-
-                footerHeight = $footer.height();
-                footerTop = ($(window).scrollTop() + $(window).height() - footerHeight) + "px";
-
-                if (($(document.body).height() + footerHeight) < $(window).height()) {
-                    //
-                    $footer.css({
-                        position: "absolute"
-                    }).animate({
-                        top: footerTop
-                    })
-                } else {
-                    $footer.css({
-                        position: "static"
-                    })
-                }
-
-            }
-
-            $(window)
-                .scroll(positionFooter)
-                .resize(positionFooter)
-
-        });
-
-        jQuery(document).ready(function() {
-
-            (function($, window, document, undefined) {
-                'use strict';
-
-                // init cubeportfolio
-                $('#js-grid-mosaic-flat').cubeportfolio({
-                    filters: '#js-filters-mosaic-flat',
-                    loadMore: '#js-loadMore-mosaic-flat',
-                    loadMoreAction: 'click',
-                    layoutMode: 'mosaic',
-                    sortToPreventGaps: true,
-                    displayType: 'fadeIn',
-                    mediaQueries: [{
-                        width: 1500,
-                        cols: 6
-                    }, {
-                        width: 1100,
-                        cols: 4
-                    }, {
-                        width: 800,
-                        cols: 3
-                    }, {
-                        width: 480,
-                        cols: 2
-                    }, {
-                        width: 320,
-                        cols: 1
-                    }],
-                    defaultFilter: '*',
-                    animationType: 'fadeOutTop',
-                    gapHorizontal: 15,
-                    gapVertical: 15,
-                    gridAdjustment: 'responsive',
-                    caption: 'zoom',
-                    displayTypeSpeed: 3000,
-
-                    // lightbox
-                    lightboxDelegate: '.cbp-lightbox',
-                    lightboxGallery: true,
-                    lightboxTitleSrc: 'data-title',
-                });
-            })(jQuery, window, document);
-
-        });
-    </script>
-
     <script>
         (function(b, o, i, l, e, r) {
             b.GoogleAnalyticsObject = l;
@@ -348,5 +274,4 @@
         ga('send', 'pageview');
     </script>
 </body>
-
 </html>

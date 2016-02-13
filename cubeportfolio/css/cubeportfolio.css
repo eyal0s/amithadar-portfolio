@@ -2472,24 +2472,60 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .cbp-popup-wrap {
-    height: 100%;
+    height: 80%;
     text-align: center;
     position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
+    width: 70%;
+    left: 15%;
+    top: 14%;
     display: none;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     z-index: 9990;
     padding: 0 10px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    /*display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%
+    width: 300px;
+    height: 200px;
+    z-index: 9990;*/
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+.overlay {
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    lef: 0;
+    position: fixed;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    /*top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;*/
+    /*background-color: rgba(0, 0, 0, 0.5);*/
 }
 .cbp-popup-wrap video {
     outline: 0 none;
 }
 .cbp-popup-lightbox {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgb(244, 241, 241);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2556,7 +2592,7 @@
     height: auto;
     display: block;
     margin: 40px 0 40px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    /*box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);*/
 }
 .cbp-popup-lightbox-img[data-action] {
     cursor: pointer;
@@ -2654,16 +2690,20 @@
 /* PREVIOUS BUTTON LIGHBOX */
 
 .cbp-popup-lightbox .cbp-popup-prev {
-    background: url("../img/cbp-sprite.png") no-repeat scroll 0 0 transparent;
-    width: 44px;
-    height: 44px;
+    /*background: url("../img/cbp-sprite.png") no-repeat scroll 0 0 transparent;*/
+    background: url("../img/buttons/back.png") no-repeat scroll;
+    background-size: 80%;
+    width: 23px;
+    height: 120px;
     top: 0;
     bottom: 0;
     left: 20px;
     margin: auto;
 }
 .cbp-popup-lightbox .cbp-popup-prev:hover {
-    background-position: 0 -46px;
+    /*background-position: 0 -46px;*/
+    background: url("../img/buttons/back-hover.png") no-repeat scroll;
+    background-size: 80%;
 }
 
 /* PREVIOUS BUTTON SINGLEPAGE */
@@ -2685,16 +2725,19 @@
 /* NEXT BUTTON LIGHTBOX */
 
 .cbp-popup-lightbox .cbp-popup-next {
-    background: url("../img/cbp-sprite.png") no-repeat scroll -46px 0 transparent;
-    width: 44px;
-    height: 44px;
+    background: url("../img/buttons/next.png") no-repeat scroll;
+    background-size: 80%;
+    width: 23px;
+    height: 120px;
     top: 0;
     bottom: 0;
     right: 20px;
     margin: auto;
 }
 .cbp-popup-lightbox .cbp-popup-next:hover {
-    background-position: -46px -46px;
+    background: url("../img/buttons/next-hover.png") no-repeat scroll;
+    background-size: 80%;
+    /*background-position: -46px -46px;*/
 }
 
 /* NEXT BUTTON SINGLEPAGE */
@@ -2716,14 +2759,20 @@
 /* CLOSE BUTTON LIGTHBOX */
 
 .cbp-popup-lightbox .cbp-popup-close {
-    background: url("../img/cbp-sprite.png") no-repeat scroll -92px 0 transparent;
+    /*background: url("../img/cbp-sprite.png") no-repeat scroll -92px 0 transparent;
     height: 40px;
-    width: 40px;
+    width: 40px;*/
+    background: url("../img/buttons/x.png") no-repeat scroll;
+    background-size: 80%;
+    width: 18px;
+    height: 18px;
     right: 20px;
     top: 20px;
 }
 .cbp-popup-lightbox .cbp-popup-close:hover {
-    background-position: -92px -46px;
+    /*background-position: -92px -46px;*/
+    background: url("../img/buttons/x-hover.png") no-repeat scroll;
+    background-size: 80%;
 }
 
 /* CLOSE BUTTON SINGLEPAGE */
@@ -2790,6 +2839,10 @@
 }
 .cbp-popup-transitionend {
     overflow-y: scroll;
+    -webkit-transition: all 1s ease-in-out;
+	  -moz-transition: all 0.3s ease-in-out;
+	  -o-transition: all 0.3s ease-in-out;
+	  -ms-transition: all 0.3s ease-in-out;
 }
 .cbp-popup-singlePage {
     left: 100%;
