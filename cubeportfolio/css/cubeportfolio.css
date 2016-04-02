@@ -3391,9 +3391,13 @@
     bottom: 0;
     left: 0;
     margin: auto;
-    background: url("../img/cbp-sprite.png") no-repeat;
+    /*background: url("../img/cbp-sprite.png") no-repeat;*/
     height: 10px;
     width: 7px;
+    width: 23px;
+
+    background: url("../img/buttons/back.png") no-repeat scroll;
+    background-size: 80%;
 }
 .cbp-nav-next:after {
     background-position: -134px 0;
