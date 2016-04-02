@@ -2479,7 +2479,7 @@
     text-align: center;
     position: fixed;
     width: 82%;
-    left: 9.01%;
+    left: 9.000001%;
     top: 10%;
     display: none;
     overflow-y: hidden;
@@ -2515,8 +2515,8 @@
     top: 0;
     lef: 0;
     position: fixed;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     /*top: 0;
@@ -2558,7 +2558,8 @@
     margin-top: 15px;
     max-width: 1024px;
     vertical-align: top;
-    width: 94%;
+    width: 100%;
+    padding-left: 12px;
 }
 .cbp-popup-singlePage .cbp-popup-content-basic {
     position: relative;
