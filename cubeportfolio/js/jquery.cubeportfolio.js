@@ -4226,7 +4226,9 @@ if (typeof Object.create !== 'function') {
             if (t.cubeportfolio.singlePageInline && t.cubeportfolio.singlePageInline.isOpen) {
                 t.cubeportfolio.singlePageInline.close();
             }
-
+            // EYAL
+            $(".bg-blur").addClass("blur");
+            $(".bg").addClass('overlay');
             // remember that the lightbox is open now
             t.isOpen = true;
 

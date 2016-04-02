@@ -2487,10 +2487,10 @@
     overflow-x: hidden;
     z-index: 9990;
     padding: 0 7px;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
 
 
     /*display: flex;
@@ -2880,10 +2880,10 @@
 }
 .cbp-popup-transitionend {
     overflow-y: scroll;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
 }
 
 /*animate the singlepage popup*/
