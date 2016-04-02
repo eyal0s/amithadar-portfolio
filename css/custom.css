@@ -169,3 +169,8 @@ a:hover {
 }
 
 /*want to change the hover state? go to cubeportfolio.css and search for caption-hover*/
+
+
+.popup-heb-title {
+  text-align: right;
+}
