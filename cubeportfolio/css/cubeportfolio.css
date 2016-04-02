@@ -2479,7 +2479,7 @@
     text-align: center;
     position: fixed;
     width: 82%;
-    left: 15%;
+    left: 9.01%;
     top: 10%;
     display: none;
     overflow-y: hidden;
@@ -2491,6 +2491,8 @@
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
+
+
     /*display: flex;
     text-align: center;
     justify-content: center;
@@ -2826,6 +2828,8 @@
 }
 .cbp-popup-singlePage .cbp-popup-close:hover {
     /*background-position: -92px -138px;*/
+    background: url("../img/buttons/x-hover.png") no-repeat scroll;
+    background-size: 80%;
 }
 .cbp-popup-singlePage .cbp-popup-ie8bg {
     background-color: #fff;
@@ -2885,9 +2889,9 @@
 /*animate the singlepage popup*/
 
 .cbp-popup-singlePage {
-    left: 100%;
+    /*left: 100%;
     -webkit-transition: left .6s ease-in-out;
-    transition: left .6s ease-in-out;
+    transition: left .6s ease-in-out;*/
     background: #f6f7f8;
     /*-webkit-animation-delay: 1.6s;
     -moz-animation-delay: 1.6s;
@@ -2903,7 +2907,7 @@
 /*single page popup animation settings*/
 
 .cbp-popup-singlePage-open {
-    left: 0;
+    left: 9%;
     background: #f6f7f8;
 }
 .cbp-popup-singlePage.cbp-popup-singlePage-fade {
