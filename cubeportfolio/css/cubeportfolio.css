@@ -123,9 +123,9 @@
     left: 0;
     margin: 0;
 }
-.cbp-item-wrapper > img {
+/*.cbp-item-wrapper > img {
   width: 90%;
-}
+}*/
 .cbp-item-off {
     z-index: -1;
     pointer-events: none;
