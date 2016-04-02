@@ -2875,15 +2875,15 @@
 
 /*animate the singlepage popup*/
 .cbp-popup-singlePage {
-    /*left: 100%;
+    left: 100%;
     -webkit-transition: left .6s ease-in-out;
-    transition: left .6s ease-in-out;*/
+    transition: left .6s ease-in-out;
     /*-webkit-animation-delay: 1.6s;
     -moz-animation-delay: 1.6s;
     animation-delay: 1.6s;*/
-    visibility: visible;
+    /*visibility: visible;
     opacity: 1;
-    transition: opacity 2s linear;
+    transition: opacity 2s linear;*/
 }
 .cbp-popup-singlePage.cbp-popup-loading .cbp-popup-content {
     opacity: 0;
@@ -2891,11 +2891,11 @@
 
 /*single page popup animation settings*/
 .cbp-popup-singlePage-open {
-    /*left: 0;*/
+    left: 0;
     background: #e7e8e9;
 }
 .cbp-popup-singlePage.cbp-popup-singlePage-fade {
-    /*left: 0;*/
+    left: 0;
     opacity: 0;
     -webkit-transition: opacity .25s ease-in-out;
     transition: opacity .25s ease-in-out;
@@ -2917,10 +2917,10 @@
 
 
 .cbp-popup-singlePage-open.cbp-popup-singlePage-right {
-    /*left: 0;*/
-    visibility: hidden;
+    left: 0;
+    /*visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 2s, opacity 2s linear;
+  transition: visibility 0s 2s, opacity 2s linear;*/
 }
 .cbp-l-project-title {
     color: #454444;
