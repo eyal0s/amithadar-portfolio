@@ -2838,10 +2838,10 @@
         left: 10px;
     }
     .cbp-popup-singlePage .cbp-popup-navigation-wrap {
-        height: 84px;
+        height: 10px;
     }
     .cbp-popup-singlePage .cbp-popup-content {
-        margin-top: 120px;
+        margin-top: 15px;
     }
 }
 .cbp-popup-loadingBox {
