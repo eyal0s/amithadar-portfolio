@@ -76,11 +76,11 @@ jQuery(document).ready(function() {
             lightboxTitleSrc: 'data-title',
 
             // singlePage popup
-            singlePageDelegate: '.cbp-singlePage',
-            singlePageDeeplinking: true,
-            singlePageStickyNavigation: true,
-            singlePageShowCounter: false,
-            singlePageCallback: function(url, element) {
+            singlePageInlineDelegate: '.cbp-singlePage',
+            singlePageInlineDeeplinking: true,
+            singlePageInlineStickyNavigation: true,
+            singlePageShowInlineCounter: false,
+            singlePageInlineCallback: function(url, element) {
                 // to update singlePage content use the following method: this.updateSinglePage(yourContent)
                 var t = this;
 
