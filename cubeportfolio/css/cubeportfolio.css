@@ -3504,11 +3504,26 @@
     /*width: 44px;*/
     /*height: 44px;*/
 }
+
+@media screen and (max-width: 600px) {
+  #title_message {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+
+@media screen and (max-width: 600px) {
 .cbp-slider .cbp-nav-next:after {
     /*background-position: -46px -92px;*/
     height: 80px;
     background: url("../img/buttons/next.png") no-repeat scroll;
     background-size: 60%;
+    visibility: hidden;
+    display: none;
+}
 }
 .cbp-slider .cbp-nav-next:hover:after {
     /*background-position: -46px -46px;*/
@@ -3534,6 +3549,7 @@
     /*right: 25px;*/
     /*left: auto;*/
 }
+
 .cbp-slider-edge .cbp-nav-controls {
     position: static;
 }
