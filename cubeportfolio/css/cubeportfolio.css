@@ -2475,12 +2475,12 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .cbp-popup-wrap {
-    height: 80%;
+    height: 85%;
     text-align: center;
     position: fixed;
-    width: 70%;
+    width: 82%;
     left: 15%;
-    top: 14%;
+    top: 8%;
     display: none;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
