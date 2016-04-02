@@ -2844,16 +2844,18 @@
 	  -o-transition: all 0.3s ease-in-out;
 	  -ms-transition: all 0.3s ease-in-out;
 }
+
+/*animate the singlepage popup*/
 .cbp-popup-singlePage {
-    left: 100%;
+    /*left: 100%;
     -webkit-transition: left .6s ease-in-out;
-    transition: left .6s ease-in-out;
+    transition: left .6s ease-in-out;*/
 }
 .cbp-popup-singlePage.cbp-popup-loading .cbp-popup-content {
     opacity: 0;
 }
 .cbp-popup-singlePage-open {
-    left: 0;
+    /*left: 0;*/
 }
 .cbp-popup-singlePage.cbp-popup-singlePage-fade {
     left: 0;
