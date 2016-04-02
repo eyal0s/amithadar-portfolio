@@ -2548,11 +2548,12 @@
     vertical-align: middle;
     text-align: left;
     max-width: 100%;
+    margin-top: 15px;
 }
 .cbp-popup-singlePage .cbp-popup-content {
     position: relative;
     z-index: 1;
-    margin-top: 0px;
+    margin-top: 15px;
     max-width: 1024px;
     vertical-align: top;
     width: 94%;
