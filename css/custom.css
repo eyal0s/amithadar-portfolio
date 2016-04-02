@@ -59,9 +59,9 @@
     font-family: IdealSansLight, Helvetica, Sans-Serif, Arial;
     letter-spacing: 2.5px;
 }
-.navbar-inner {
+/*.navbar-inner {
     text-align: center;
-}
+}*/
 .navbar-default {
     background-color: #ffffff;
     border-color: #ffffff;
