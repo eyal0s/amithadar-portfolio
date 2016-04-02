@@ -68,7 +68,7 @@ jQuery(document).ready(function() {
             gapVertical: 15,
             gridAdjustment: 'responsive',
             caption: 'zoom',
-            displayTypeSpeed: 3000,
+            displayTypeSpeed: 1500,
 
             // lightbox
             lightboxDelegate: '.cbp-lightbox',
@@ -76,11 +76,11 @@ jQuery(document).ready(function() {
             lightboxTitleSrc: 'data-title',
 
             // singlePage popup
-            singlePageInlineDelegate: '.cbp-singlePage',
-            singlePageInlineDeeplinking: true,
-            singlePageInlineStickyNavigation: true,
-            singlePageShowInlineCounter: false,
-            singlePageInlineCallback: function(url, element) {
+            singlePageDelegate: '.cbp-singlePage',
+            singlePageDeeplinking: true,
+            singlePageStickyNavigation: true,
+            singlePageShowCounter: false,
+            singlePageCallback: function(url, element) {
                 // to update singlePage content use the following method: this.updateSinglePage(yourContent)
                 var t = this;
 

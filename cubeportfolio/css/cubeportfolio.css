@@ -22,6 +22,8 @@
 .cbp-l-filters-alignCenter, .cbp-l-filters-alignCenter *, .cbp-l-filters-alignLeft, .cbp-l-filters-alignLeft *, .cbp-l-filters-alignRight, .cbp-l-filters-alignRight *, .cbp-l-filters-button, .cbp-l-filters-button *, .cbp-l-filters-buttonCenter, .cbp-l-filters-buttonCenter *, .cbp-l-filters-dropdown, .cbp-l-filters-dropdown *, .cbp-l-filters-list, .cbp-l-filters-list *, .cbp-l-filters-work, .cbp-l-filters-work *, .cbp-l-filters-big, .cbp-l-filters-big *, .cbp-l-filters-text, .cbp-l-filters-text *, .cbp-l-filters-underline, .cbp-l-filters-underline * {
     -webkit-tap-highlight-color: transparent;
 }
+
+/*LOADER*/
 .cbp:after, .cbp-lazyload:after, .cbp-popup-loadingBox:after, .cbp-popup-singlePageInline:after {
     content: '';
     position: absolute;
@@ -2483,7 +2485,7 @@
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     z-index: 9990;
-    padding: 0 10px;
+    padding: 0 7px;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -2640,7 +2642,7 @@
     width: 100%;
     z-index: 9990;
     height: 104px;
-    /*background-color: #3D4750;*/
+    background-color: #e7e8e9;
 }
 .cbp-popup-singlePage .cbp-popup-navigation {
     position: relative;
@@ -2860,8 +2862,8 @@
     display: none;
 }
 .cbp-popup-loading .cbp-popup-loadingBox {
-    visibility: visible;
-    display: block;
+    /*visibility: visible;
+    display: block;*/
 }
 .cbp-popup-transitionend {
     overflow-y: scroll;
@@ -2880,8 +2882,8 @@
     -moz-animation-delay: 1.6s;
     animation-delay: 1.6s;*/
     visibility: visible;
-  opacity: 1;
-  transition: opacity 2s ease-in-out;
+    opacity: 1;
+    transition: opacity 2s linear;
 }
 .cbp-popup-singlePage.cbp-popup-loading .cbp-popup-content {
     opacity: 0;
@@ -2890,6 +2892,7 @@
 /*single page popup animation settings*/
 .cbp-popup-singlePage-open {
     /*left: 0;*/
+    background: #e7e8e9;
 }
 .cbp-popup-singlePage.cbp-popup-singlePage-fade {
     /*left: 0;*/
@@ -2911,6 +2914,8 @@
   opacity: 0;
   transition: visibility 0s 2s, opacity 2s linear;*/
 }
+
+
 .cbp-popup-singlePage-open.cbp-popup-singlePage-right {
     /*left: 0;*/
     visibility: hidden;
