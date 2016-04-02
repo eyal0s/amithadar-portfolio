@@ -3499,12 +3499,12 @@
     height: 44px;
 }
 .cbp-slider .cbp-nav-next {
-    right: -30px;
+    right: -20px;
     left: auto;
     width: 20px;
 }
 .cbp-slider .cbp-nav-prev {
-    left: -30px;
+    left: -20px;
     right: auto;
 }
 .cbp-slider .cbp-nav-next:after, .cbp-slider .cbp-nav-prev:after {
