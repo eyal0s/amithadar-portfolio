@@ -3395,15 +3395,16 @@
     height: 10px;
     width: 7px;
     width: 23px;
-
-    background: url("../img/buttons/back.png") no-repeat scroll;
-    background-size: 80%;
 }
 .cbp-nav-next:after {
-    background-position: -134px 0;
+    /*background-position: -134px 0;*/
+    background: url("../img/buttons/next.png") no-repeat scroll;
+    background-size: 80%;
 }
 .cbp-nav-prev:after {
-    background-position: -134px -12px;
+    /*background-position: -134px -12px;*/
+    background: url("../img/buttons/back.png") no-repeat scroll;
+    background-size: 80%;
 }
 .cbp-nav-stop {
     opacity: 0.5 !important;
