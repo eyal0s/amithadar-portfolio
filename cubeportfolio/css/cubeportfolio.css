@@ -2650,7 +2650,7 @@
     height: 100%;
 }
 .cbp-popup-singlePage-sticky .cbp-popup-navigation-wrap {
-    position: fixed;
+    /*position: fixed;*/
     top: 0 !important;
 }
 .cbp-popup-singlePage-counter {
@@ -2878,6 +2878,7 @@
     left: 100%;
     -webkit-transition: left .6s ease-in-out;
     transition: left .6s ease-in-out;
+    background: #e7e8e9;
     /*-webkit-animation-delay: 1.6s;
     -moz-animation-delay: 1.6s;
     animation-delay: 1.6s;*/
