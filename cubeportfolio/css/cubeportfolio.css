@@ -2764,6 +2764,14 @@
     right: 0;
     bottom: 0;
     left: 108px;*/
+    /*background: url("../img/buttons/next.png") no-repeat scroll;
+    background-size: 80%;
+    width: 23px;
+    height: 120px;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;*/
     background: url("../img/buttons/next.png") no-repeat scroll;
     background-size: 80%;
     width: 23px;
@@ -3376,7 +3384,7 @@
     opacity: 0.8;
 }
 .cbp-nav-next:after, .cbp-nav-prev:after {
-    content: '';
+    /*content: '';
     position: absolute;
     top: 0;
     right: 0;
@@ -3385,13 +3393,23 @@
     margin: auto;
     background: url("../img/cbp-sprite.png") no-repeat;
     height: 10px;
-    width: 7px;
+    width: 7px;*/
+    background: url("../img/buttons/back.png") no-repeat scroll;
+    background-size: 80%;
+    width: 23px;
+    height: 120px;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin: auto;
 }
 .cbp-nav-next:after {
     background-position: -134px 0;
 }
 .cbp-nav-prev:after {
-    background-position: -134px -12px;
+    /*background-position: -134px -12px;*/
+    background: url("../img/buttons/back-hover.png") no-repeat scroll;
+    background-size: 80%;
 }
 .cbp-nav-stop {
     opacity: 0.5 !important;
