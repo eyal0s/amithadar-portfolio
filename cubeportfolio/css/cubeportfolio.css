@@ -630,7 +630,7 @@
 
 @media(max-width:767px){
   .cbp-l-filters-alignCenter .cbp-filter-item {
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 1.5px;
   }
 }
@@ -3519,6 +3519,18 @@
     left: -20px;
     right: auto;
 }
+@media(max-width:767px){
+  .cbp-slider .cbp-nav-next {
+      /*height: 0px;*/
+      visibility: hidden;
+  }
+  .cbp-slider .cbp-nav-prev {
+      /*width: 0px;*/
+      visibility: hidden;
+  }
+
+}
+
 .cbp-slider .cbp-nav-next:after, .cbp-slider .cbp-nav-prev:after {
     /*background: url("../img/cbp-sprite.png") no-repeat;*/
     /*width: 44px;*/
