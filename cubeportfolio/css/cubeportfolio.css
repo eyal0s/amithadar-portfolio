@@ -2687,13 +2687,13 @@
     user-select: none;
 }
 .cbp-popup-lightbox .cbp-popup-prev, .cbp-popup-lightbox .cbp-popup-next, .cbp-popup-lightbox .cbp-popup-close {
-    visibility: hidden;
+    visibility: visible;
 }
 
 /* NAVOGATION BUTTONS */
 
 .cbp-popup-ready.cbp-popup-lightbox .cbp-popup-next, .cbp-popup-ready.cbp-popup-lightbox .cbp-popup-prev, .cbp-popup-ready.cbp-popup-lightbox .cbp-popup-close {
-    visibility: hidden;;
+    visibility: visible;
 }
 
 /* PREVIOUS BUTTON LIGHBOX */

@@ -23,7 +23,7 @@
 
 .navbar .navbar-nav {
     display: inline-block;
-    /*float: none;*/
+    float: left;
     vertical-align: top;
     font-size: 14px;
     /*font-family: IdealSansLight, Helvetica, Sans-Serif, Arial;*/
@@ -176,6 +176,7 @@ a:hover {
 }
 
 .mobile-head {
+  margin-top: 25px;
   display: inline-block;
   text-align: center;
   left: 0;
