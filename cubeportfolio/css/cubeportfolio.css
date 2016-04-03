@@ -627,6 +627,14 @@
     color: #bfbfbf;
     cursor: default;
 }
+
+@media(max-width:767px){
+  .cbp-l-filters-alignCenter .cbp-filter-item {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+}
+
 .cbp-l-filters-alignCenter .cbp-filter-counter {
     background: none repeat scroll 0 0 #626161;
     border-radius: 3px;
