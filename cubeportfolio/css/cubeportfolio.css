@@ -37,10 +37,14 @@
     margin: auto;
     -webkit-animation: cbp-rotation .8s infinite linear;
     animation: cbp-rotation .8s infinite linear;
-    border-left: 3px solid rgba(114, 144, 182, 0.15);
+    /*border-left: 3px solid rgba(114, 144, 182, 0.15);
     border-right: 3px solid rgba(114, 144, 182, 0.15);
     border-bottom: 3px solid rgba(114, 144, 182, 0.15);
-    border-top: 3px solid rgba(114, 144, 182, 0.8);
+    border-top: 3px solid rgba(114, 144, 182, 0.8);*/
+    border-left: 3px solid rgba(25, 26, 30, 0.15);
+    border-right: 3px solid rgba(25, 26, 30, 0.15);
+    border-bottom: 3px solid rgba(25, 26, 30, 0.15);
+    border-top: 3px solid rgba(25, 26, 30, 0.8);
     border-radius: 100%;
 }
 
