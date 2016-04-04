@@ -2815,8 +2815,8 @@
     background-size: 80%;
     width: 18px;
     height: 18px;
-    right: 20px;
-    top: 20px;
+    left: 15px;
+    top: 15px;
 }
 .cbp-popup-lightbox .cbp-popup-close:hover {
     /*background-position: -92px -46px;*/

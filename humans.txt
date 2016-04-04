@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <Eyal Ben Ezra> -- <The man> -- <@eyalbe>
 
 # THANKS
 

@@ -91,6 +91,13 @@
 #hero {
     margin-left: 67px;
 }
+
+#backup-header:hover {
+  color: #333;
+  text-decoration: none;
+
+}
+
 #footer-in {
     /*position: absolute;*/
     bottom: 0;
