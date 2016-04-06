@@ -209,5 +209,10 @@ a:hover {
 }
 
 .popup-landscape-title {
-  margin: 20px 25px 20px 25px;
+  margin: 35px 35px 20px 35px;
+}
+
+.slider-landscape {
+  height: 70%;
+  width: auto;
 }
