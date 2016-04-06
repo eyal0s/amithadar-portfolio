@@ -207,3 +207,7 @@ a:hover {
 .mobile-head:hover {
   color: #333;
 }
+
+.popup-landscape-title {
+  margin: 20px 25px 20px 25px;
+}
