@@ -5166,7 +5166,7 @@ if (typeof Object.create !== 'function') {
                 img = this.content.find('img'),
                 padding = parseInt(img.css('margin-top'), 10) + parseInt(img.css('margin-bottom'), 10);
 
-            img.css('max-height', (height - padding - 50) + 'px');
+            img.css('max-height', (height - padding) + 'px');
         },
 
         preloadNearbyImages: function() {
