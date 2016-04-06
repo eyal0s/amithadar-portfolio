@@ -5155,6 +5155,7 @@ if (typeof Object.create !== 'function') {
             t.wrap[(state) ? 'addClass' : 'removeClass']('cbp-popup-loading');
         },
 
+        //EYAL-RESIZING THE IMG?
         resizeImage: function() {
             // if lightbox is not open go out
             if (!this.isOpen) {
@@ -5165,7 +5166,7 @@ if (typeof Object.create !== 'function') {
                 img = this.content.find('img'),
                 padding = parseInt(img.css('margin-top'), 10) + parseInt(img.css('margin-bottom'), 10);
 
-            img.css('max-height', (height - padding) + 'px');
+            img.css('max-height', (height - padding - 50) + 'px');
         },
 
         preloadNearbyImages: function() {
