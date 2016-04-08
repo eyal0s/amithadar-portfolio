@@ -3546,26 +3546,26 @@
     /*background-position: -46px -92px;*/
     height: 80px;
     background: url("../img/buttons/next.png") no-repeat scroll;
-    background-size: 60%;
+    background-size: 75%;
 }
 
 .cbp-slider .cbp-nav-next:hover:after {
     /*background-position: -46px -46px;*/
     height: 80px;
     background: url("../img/buttons/next-hover.png") no-repeat scroll;
-    background-size: 60%;
+    background-size: 75%;
 }
 .cbp-slider .cbp-nav-prev:after {
     /*background-position: 0 -92px;*/
     height: 80px;
     background: url("../img/buttons/back.png") no-repeat scroll;
-    background-size: 50%;
+    background-size: 75%;
 }
 .cbp-slider .cbp-nav-prev:hover:after {
     /*background-position: 0 -46px;*/
     height: 80px;
     background: url("../img/buttons/back-hover.png") no-repeat scroll;
-    background-size: 50%;
+    background-size: 75%;
 }
 .cbp-slider .cbp-nav-pagination {
     /*text-align: right;*/
