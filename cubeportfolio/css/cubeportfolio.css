@@ -2522,7 +2522,9 @@
 @media only screen and (max-width: 400px) {
   .cbp-popup-wrap {
     height: 99%;
-    width: 99%
+    width: 99%;
+    top: 0%;
+    left: 0%;
   }
 
 }
