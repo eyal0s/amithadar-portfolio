@@ -2941,15 +2941,15 @@
     background: #f6f7f8;
 }
 
-/*@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
   .cbp-popup-singlePage-open {
-    left: 1%;
+    left: 0.00001%;
   }
 }
 
-@media only screen and (max-width: 400px) {
+/*@media only screen and (max-width: 400px) {
   .cbp-popup-wrap {
-    left: 0%;
+    left: -2%;
   }
 }*/
 
