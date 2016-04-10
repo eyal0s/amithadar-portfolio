@@ -219,6 +219,12 @@ a:hover {
   margin: 25px 35px 20px 35px;
 }
 
+@media (max-width:400px) {
+  .popup-landscape-title {
+    margin: 5px 5px 5px 5px;
+  }
+}
+
 .landscape {
   padding: 0px 70px 0px 70px;
 }
