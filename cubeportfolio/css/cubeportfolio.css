@@ -2940,6 +2940,14 @@
     left: 9%;
     background: #f6f7f8;
 }
+
+@media only screen and (max-width: 400px) {
+  .cbp-popup-wrap {
+    left: 0.000001%;
+  }
+
+}
+
 .cbp-popup-singlePage.cbp-popup-singlePage-fade {
     left: 0;
     opacity: 0;
