@@ -68,7 +68,7 @@ jQuery(document).ready(function() {
             gapVertical: 15,
             gridAdjustment: 'responsive',
             caption: 'zoom',
-            displayTypeSpeed: 1500,
+            displayTypeSpeed: 1000,
 
             // lightbox
             lightboxDelegate: '.cbp-lightbox',

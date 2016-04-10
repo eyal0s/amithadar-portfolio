@@ -2941,12 +2941,17 @@
     background: #f6f7f8;
 }
 
+/*@media only screen and (max-width: 400px) {
+  .cbp-popup-singlePage-open {
+    left: 1%;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .cbp-popup-wrap {
     left: 0%;
   }
-
-}
+}*/
 
 .cbp-popup-singlePage.cbp-popup-singlePage-fade {
     left: 0;
