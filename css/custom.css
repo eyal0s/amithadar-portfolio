@@ -87,6 +87,7 @@
 }
 .navbar-default .navbar-nav>li>a {
     color: rgb(0, 0, 0);
+    -webkit-font-smoothing: antialiased;
 }
 #hero {
     margin-left: 67px;
