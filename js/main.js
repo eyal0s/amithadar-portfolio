@@ -94,7 +94,7 @@ jQuery(document).ready(function() {
                         t.updateSinglePage(result);
                     })
                     .fail(function() {
-                        t.updateSinglePage('AJAX Error! Please refresh the page!');
+                        t.updateSinglePage('Oh snap something went wrong. Would you mind refreshing the page?');
                     });
             }
 
