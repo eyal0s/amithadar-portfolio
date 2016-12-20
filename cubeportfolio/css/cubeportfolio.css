@@ -2490,12 +2490,12 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 .cbp-popup-wrap {
-    height: 89%;
+    height: 94%;
     text-align: center;
     position: fixed;
     width: 82%;
     left: 9.000001%;
-    top: 10%;
+    top: 3%;
     display: none;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
@@ -2521,8 +2521,8 @@
 
 @media only screen and (max-width: 400px) {
   .cbp-popup-wrap {
-    height: 99%;
-    width: 99%;
+    height: 100%;
+    width: 100%;
     top: 0%;
     left: 0%;
   }
