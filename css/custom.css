@@ -230,6 +230,12 @@ a:hover {
   padding: 0px 70px 0px 70px;
 }
 
+@media (max-width:768px) {
+  .about {
+    margin-top: 40px;
+  }
+}
+
 /*.slider-landscape {
   height: 70%;
   width: auto;
